@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo --version)",
+      "Bash(where.exe winget *)",
+      "Bash(where.exe choco *)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(jq -e '.env' \"C:/Users/gonza/.claude/settings.json\")",
+      "Bash(python -c \"import json; d=json.load\\(open\\('C:/Users/gonza/.claude/settings.json'\\)\\); print\\(json.dumps\\(d.get\\('env'\\), indent=2\\)\\)\")",
+      "Bash(pnpm --version)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm approve-builds *)",
+      "Bash(pnpm rebuild *)",
+      "Bash(pnpm typecheck *)",
+      "Bash(pnpm lint *)",
+      "Bash(pnpm build *)",
+      "Bash(pnpm dev *)",
+      "Bash(echo \"PID=$!\")",
+      "Bash(pkill -f \"vite\")",
+      "Bash(taskkill //F //IM node.exe //FI \"WINDOWTITLE ne console*\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 22068)",
+      "Bash(pnpm test *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\gonza\\.claude\\plans"
+    ]
+  }
+}
